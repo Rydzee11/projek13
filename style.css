@@ -1,0 +1,324 @@
+/* Import Font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    color: #334e68;
+}
+
+/* tambah data mahasiswa */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #102a43;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #627d98;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(98, 125, 152, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group,
+.checkbox-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.radio-group label,
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #486581;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #486581;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #334e68;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* tampil data mahasiswa */
+.container-tampil {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 95%;
+    max-width: 1500px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f4f8;
+    padding-bottom: 15px;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #f8fafc;
+    color: #486581;
+    text-align: center;
+    padding: 15px 12px;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: 600;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f4f8;
+    vertical-align: middle;
+}
+
+table tr:hover {
+    background-color: #fbfcfd;
+}
+
+.aksi { 
+    text-align: center; 
+}
+
+/* Tombol-tombol Navigasi */
+.tombol-nav { 
+    display: flex; 
+    gap: 10px; 
+}
+
+.btn-tambah, 
+.btn-logout, 
+.btn-edit, 
+.btn-hapus {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-tambah { 
+    background-color: #486581; 
+    color: white; 
+}
+.btn-tambah:hover { 
+    background-color: #334e68; 
+}
+
+.btn-logout { 
+    background-color: #e54343; 
+    color: white; 
+}
+.btn-logout:hover { 
+    background-color: #b91c1c; 
+}
+
+.btn-aksi { 
+    display: flex; 
+    gap: 5px; 
+    justify-content: center; 
+}
+
+.btn-edit { 
+    color: #486581; 
+    border: 1px solid #486581; 
+}
+.btn-edit:hover { 
+    background-color: #486581; 
+    color: white; 
+}
+
+.btn-hapus { 
+    color: #e54343; 
+    border: 1px solid #e54343; 
+}
+.btn-hapus:hover { 
+    background-color: #e54343; 
+    color: white; 
+}
+
+/* login */
+.login-page {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    margin-bottom: 8px;
+    color: #102a43;
+    font-size: 1.8rem;
+}
+
+.login-header p {
+    color: #627d98;
+    font-size: 0.9rem;
+}
+
+.pass-salah {
+    background-color: #fff5f5;
+    color: #c53030;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #feb2b2;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .tombol-nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tombol-nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+    }
+    
+    .container-tampil {
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    .login-container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+}
