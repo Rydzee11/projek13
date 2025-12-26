@@ -22,7 +22,8 @@
     }
     ?>
     <div class="container">
-        <h1>Formulir Pendataan Mahasiswa </h1>
+        <h1>Form Koreksi Data Mahasiswa</h1>
+        <p>A12.2024.07218 - Muhamad Farid Alfarizi</p>
         <form action="simpanKoreksiDataMhs.php" method="POST">
 
             <div class="form-group">

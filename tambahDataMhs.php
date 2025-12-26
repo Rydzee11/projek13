@@ -12,6 +12,7 @@
 
     <div class="container">
         <h1>Form Input Mahasiswa</h1>
+        <p>A12.2024.07218 - Muhamad Farid Alfarizi</p>
         <form action="simpanDataMhs.php" method="POST">
 
             <div class="form-group">

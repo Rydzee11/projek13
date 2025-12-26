@@ -28,10 +28,16 @@ body {
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
     color: #102a43;
     font-weight: 600;
+}
+
+p {
+    text-align: center;
+    color: #102a43;
+    margin-bottom: 30px;
 }
 
 .form-group {
@@ -174,7 +180,6 @@ table tr:hover {
     text-align: center; 
 }
 
-/* Tombol-tombol Navigasi */
 .tombol-nav { 
     display: flex; 
     gap: 10px; 
